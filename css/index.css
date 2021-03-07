@@ -1,0 +1,106 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800&display=swap');
+
+*{-webkit-text-size-adjust:none;}
+html,body{overflow-x: hidden; font-family: 'Gothic A1', sans-serif;}
+
+
+/* header */
+header{height: 70px; background: #fff; position: relative;}
+.search_btn{position: absolute; background: url(../img/search_btn.png) no-repeat; width: 29px; height: 29px; text-indent: -9999px; background-size: auto 28px; top: 22px; left: 16px;}
+.logo{display: block; height: 70px; background: url(../img/header_logo.png) no-repeat center;  background-size: auto 40px; text-indent: -9999px;}
+.menu_btn{display: block; position: absolute; width: 29px; height: 29px; top: 22px; right: 16px;}
+
+
+/* nav */
+.gnb{position: absolute; width: 83.33vw; height:auto; background: #fff; top: 70px; right: -100%; box-shadow: -3px 5px 3px rgba(0,0,0,0.3); transition: right 0.35s; z-index: 3000;}
+.gnb.on{right: 0;}
+.profile{height: 19.44vw; background: #ff965c; padding-left: 3.8vw;}
+.profile h3{float: left; line-height: 19.44vw;}
+.profile h3 img{width: 15.833vw; height: 15.833vw;}
+.profile p{float: left; font-size: 5.55vw; color: #fff; font-weight: 600; line-height: 19.44vw; margin-left: 4.44vw;}
+.icon{border-bottom: 1px solid #ccc;}
+.icon li a{display: block; float: left; width: 33%; height: 27.77vw; border-right: 1px solid #ccc; text-align: center;}
+.icon li:last-child{border-right: none;}
+.icon li img{margin-bottom: 20px;}
+.icon li:nth-child(1) img{width: 8.055vw; height: 10.833vw; margin-top: 4.166vw;}
+.icon li:nth-child(2) img{width: 10vw; height: 10vw; margin-top: 5.277vw;}
+.icon li:nth-child(3) img{width: 9.166vw; height: 10.277vw; margin-top: 5vw;}
+.icon li p{font-size: 3.888vw; color: #666; font-weight: 500;}
+.gnb_list li a{display: block; height: 17.777vw; border-bottom: 1px solid #ccc; line-height: 17.777vw; padding-left: 5vw;}
+.gnb_list li img{width: 10.555vw; height: 10.555vw;}
+.gnb_list li span{font-size: 4vw; font-weight: 500; color: #666; margin-left: 4vw;}
+.setting{margin-top: 4.44vw; margin-bottom: 4.44vw;}
+.setting h3{font-size: 3.33vw; color: #999; font-weight: 600; padding-left: 5vw; margin-bottom: 2vw;}
+.setting a{display: block; font-size: 3.611vw; color: #666; font-weight: 500; margin-left: 20vw; line-height: 2.3;}
+
+
+
+/* mainvisual */
+.mainvisual{width: 100vw; height: 111.11vw; background: url(../img/mainvisual.png) no-repeat; background-size: cover; text-indent: -9999px;}
+
+
+/* town */
+.town{padding: 11.11vw 0; background-color: #f8f8f8;}
+.town h2{font-size: 5vw; color: #ff7e36; font-weight: 500;}
+.town h2 span{display: block; text-align: center; margin-bottom: 2.77vw; letter-spacing: 0.3px; word-spacing: 0.5px;}
+.town h2 span:nth-child(3){margin-bottom: 8.33vw;}
+.town_list li{text-align: center; margin-bottom: 8.33vw;}
+.town_list li img{width: 73.88vw; height: auto;}
+.mytown{display: block; width: 55.55vw; height: 13.88vw; background: #ffa264; color: #fff; text-align: center; line-height: 13.88vw; margin: auto; font-size: 4.44vw; font-weight: 800;}
+
+
+/* dif */
+.dif{padding: 11.11vw 2.77vw; background-color: #faf4ec;}
+.dif h2{font-size: 5.55vw; color: #ffa264; font-weight: 700; margin-bottom: 5.55vw;}
+.dif h2 span{color: #00b493;}
+.dif_list li{float: left; width: calc(50% - 10px);}
+.dif_list li:nth-child(2n-1){margin-right: 10px;}
+.dif_list li:nth-child(2n){margin-left: 10px;}
+.dif_list li img{width: 44.44vw; height: auto;}
+.dif_list li h3{text-align: center; font-size: 4.44vw; margin-top: 3.88vw; margin-bottom: 2.77vw; font-weight: 700; color: #555;}
+.dif_list li p{text-align: center; font-size: 3.0555vw; color: #666; line-height: 4.44vw; font-weight: 600;}
+.bottom{margin-bottom: 5.55vw;}
+
+
+/* best */
+.best{padding: 11.11vw 2.78vw; background-color: #f8f8f8;}
+.best h2{font-size: 5.55vw; color: #00b493; font-weight: 700; margin-bottom: 5.55vw;}
+.best h2 span{color: #ffa264;}
+.best_list li div{float: left; width: calc(50% - 5px);}
+.best_list li div:nth-child(2n-1){margin-right: 5px;}
+.best_list li div:nth-child(2n){margin-left: 5px;}
+.best_list img{width: 45.83vw; height: auto;}
+.best_list li p{padding-left: 1.11vw;}
+.best_list li .title{font-size: 3.6111vw; color: #555; font-weight: 500; margin-top: 2.777vw; margin-bottom: 2.22vw;}
+.best_list li .price{font-size: 3.88vw; color: #333; font-weight: 800; margin-bottom: 2.22vw;}
+.best_list li .price span{font-size: 3.33vw; color: #555; font-weight: 600;}
+.best_list li .area{font-size: 2.77vw; color: #555; font-weight: 500;}
+.best .more{display: block; width: 27.77vw; height: 6.9444vw; border: 1px solid #ffa264; border-radius: 1.66vw; color: #ffa264; text-align: center; line-height: 6.944vw; margin: auto; background: #f8f8f8; font-size: 3.33vw; font-weight: 600; margin-top: 7.77vw;}
+.best .more:hover{background: #ffa264; color: #fff;}
+/* bxSlider 부분 */
+.element.style{height: auto; width: 340px;}
+.bx-wrapper{background: none; box-shadow: none; border: none;}
+.bx-wrapper .bx-pager.bx-default-pager a{width: 8px; height: 8px; border-radius: 50%; background: #fed8be;}
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover{background: #ffa264;}
+
+
+/* notice */
+.notice{background: url(../img/notice.png) no-repeat; width: 100vw; height: 96.388vw; text-indent: -9999px; background-size: cover;}
+
+
+/* footer */
+footer{padding: 3.88vw 2.77vw; background-color: #ffa264;}
+.footer_logo{background: url(../img/footer_logo.png) no-repeat; text-indent: -9999px; height: 7.22vw; background-size: 23.611vw auto; margin-bottom: 2vw;}
+.policy_left{float: left; margin-left: 2.77vw;}
+.policy_left li a{font-size: 3.5vw; color: #fff; font-weight: 500; line-height: 1.5;}
+.policy_right{float: right; margin-right: 15.55vw;}
+.policy_right li a{font-size: 3.5vw; color: #fff; font-weight: 500; line-height: 1.5;}
+
+.footer_txt{clear: both; padding-top: 5.55vw; font-size: 3.33vw; color: #fff; margin-left: 2.77vw;}
+.footer_txt p{line-height: 1.3;}
+.footer_txt address{margin-top: 1.388vw;}
+
+
+
+
